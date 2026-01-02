@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whispered</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+  
+  <div class="container">
+    <h1 class="glitch" data-text="Anonymous Thoughts">Whispered</h1>
+    <p class="subtitle">A quiet place for things never said out loud.</p>
+
+    <div class="input-box">
+      <textarea id="thoughtInput" placeholder="Type something you never say..." maxlength="200"></textarea>
+      <div class="char-counter"><span id="charCount">0</span>/200</div>
+      <button onclick="addThought()">
+        <span class="btn-text">Release</span>
+        <span class="btn-icon">✨</span>
+      </button>
+    </div>
+
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-number" id="totalThoughts">0</span>
+        <span class="stat-label">thoughts released</span>
+      </div>
+    </div>
+
+    <div id="wall" class="wall"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
